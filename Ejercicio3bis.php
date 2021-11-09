@@ -7,10 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+    <?php
     session_start();
-    echo session_id();
-    echo sys_get_temp_dir();
+    echo $_SESSION["nombre"];
+    echo $_SESSION["Edad"];
+    unset($_SESSION["nombre"]);
+    print_r($_SESSION);
+    session_unset();
+    print_r($_SESSION);
+    session_destroy();
+    print_r($_SESSION);
     ?>
 </body>
 </html>

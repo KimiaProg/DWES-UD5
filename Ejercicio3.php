@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+    <?php
     session_start();
-    echo session_id();
     echo sys_get_temp_dir();
+    $_SESSION["nombre"]="Kimia";
+    $_SESSION["Edad"]= 23;
     ?>
 </body>
 </html>

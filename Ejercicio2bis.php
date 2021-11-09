@@ -7,10 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+    <?php
     session_start();
     echo session_id();
-    echo sys_get_temp_dir();
     ?>
 </body>
 </html>
