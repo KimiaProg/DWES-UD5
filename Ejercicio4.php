@@ -18,12 +18,12 @@
         <tr>
             <td>session.use_cookies</td>
             <td>Por si utilizar cookie o url para pasar las sesiones</td>
-            <td>boolean 1-0</td>
+            <td>boolean 1(Habilitado)-0(Deshabilitado)</td>
         </tr>
         <tr>
             <td>session.use_only_cookies</td>
             <td>Para que el módulo sólo use cookies para almacenar el id de sesión en la parte del cliente. Es para impedir ataques que implican pasar el id de sesión en la URL.</td>
-            <td>boolean</td>
+            <td>boolean 1(Habilitado)-0(Deshabilitado)</td>
         </tr>
         <tr>
             <td>session.save_handler</td>
@@ -38,7 +38,7 @@
         <tr>
             <td>session.auto_start</td>
             <td>Si el módulo de sesión inicia una sesión automáticamente cuando arranque una petició</td>
-            <td>boolean 1-0</td>
+            <td>boolean 1(Habilitado)-0(Deshabilitado)</td>
         </tr>
         <tr>
             <td>session.cookie_lifetime</td>
