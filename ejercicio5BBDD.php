@@ -20,7 +20,9 @@ function insert($nombre,$pass,$cuenta){
         $sql->bindParam(":usuario", $nombre);
         $sql->bindParam(":password", $pass);
         $sql->bindParam(":cuenta", $cuenta);
-        $sql->execute();
-        return $con->lastInsertId();
+        $comprobar=$sql->execute();
+        $con="";
+        return $comprobar;
+        
 }
 ?>
