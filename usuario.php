@@ -11,11 +11,11 @@
 <body>
     <?php
     session_start();
-    if (isset($_SESSION["perfil"])) {
-        if ($_SESSION["perfil"] == "usuario") {
-            echo "Hola pringao ";
-        }
-    } else {
+    if ($_SESSION["perfil"] == "usuario") {
+        echo "Hola pringao ";
+    }elseif($_SESSION["perfil"] == "admin") {
+        echo "Eres el jefe supremo, no quieres ir a tu página?";
+    }else {
         header("Location: ejercicio7.php");
     }
     ?>
